@@ -105,32 +105,6 @@ python lyrics_adder.py --help
 
 ---
 
-## 🛠️ Building the Executable
-
-The repository includes a PyInstaller spec to bundle into a standalone binary:
-
-```bash
-pyinstaller --onefile \
-  --add-data ".env;." \
-  lyrics_adder.py
-```
-
-- `--onefile` creates a single executable (`dist/lyrics_adder.exe`).
-- `--add-data ".env;."` ensures `.env` is bundled.
-
-Once built, you can upload the `.exe` (or Linux/macOS binary) to GitHub Releases.
-
----
-
-## 📦 Releases
-
-1. Build locally using the steps above.
-2. Tag a new release in GitHub (e.g. `v1.0.0`).
-3. Upload the `dist/lyrics_adder.exe` (and/or other binaries) under **Releases**.
-4. Attach the `README.md` (and optionally `CHANGELOG.md`).
-
----
-
 ## 📝 .env.example
 
 ```dotenv
